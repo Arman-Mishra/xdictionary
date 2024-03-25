@@ -40,9 +40,7 @@ function App() {
         onChange={(e) => setWord(e.target.value)}
       />
       <button onClick={handleClick}>Search</button>
-      <p style={{ marginTop: "10px" }}>
-        <strong>Defintion:</strong>
-      </p>
+      <p style={{ marginTop: "10px", fontWeight: "bold" }}>Defintion:</p>
       {definition ? <p>{definition}</p> : <></>}
     </div>
   );
